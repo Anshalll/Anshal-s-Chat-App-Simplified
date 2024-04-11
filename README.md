@@ -1,4 +1,4 @@
-i did this Anshal's ChatApp is a real-time chat application built with a modern frontend, robust backend, and containerization for easy deployment. It empowers users to connect, communicate, and collaborate seamlessly.
+Anshal's ChatApp is a real-time chat application built with a modern frontend, robust backend, and containerization for easy deployment. It empowers users to connect, communicate, and collaborate seamlessly.
 
 Key Features:
 
