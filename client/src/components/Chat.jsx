@@ -72,8 +72,8 @@ export default function Chat({ username }) {
                 </div>
 
                 <div className='w-full scroller justify-end  h-[80%] flex flex-col p-[20px] text-white overflow-y-auto gap-[20px]'>
-                    {Messages.map((value, index) => {
-                        return value.newuser ? <div key={index} className='w-full flex items-center justify-center'>
+                    {Messages.map((value, index) => (
+                            value.newuser ? <div   className='w-full flex items-center justify-center'>
                             <p className='bg-green-600 text-white p-[5px] rounded-lg'>{value.newuser}</p></div> : value.disconnected ? <div className='w-full flex items-center justify-center'>
                                 <p className='bg-red-600 text-white p-[5px] rounded-lg'>{value.disconnected}</p></div> : value.socketid === server.id ? <div className='w-full flex items-center justify-end'>
                                 <div className='bg-gray-800 w-[10cm]  rounded-lg p-[20px] text-white flex flex-col gap-[10px]'>
@@ -94,7 +94,7 @@ export default function Chat({ username }) {
                                     </div>
                                 </div>
                                </div>
-                    })}
+                    ))}
                 </div>
 
                 <div className='w-full px-[20px] rounded-full h-[10%] flex bg-gray-900 border-2 border-cyan-500'>
